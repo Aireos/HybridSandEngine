@@ -440,6 +440,18 @@ CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj: \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_version.h \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_locale.h \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_misc.h \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/gtc/matrix_transform.hpp \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_projection.hpp \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/gtc/constants.hpp \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/scalar_constants.hpp \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/scalar_constants.inl \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/gtc/constants.inl \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_projection.inl \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_clip_space.hpp \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_clip_space.inl \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_transform.hpp \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_transform.inl \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/gtc/matrix_transform.inl \
  C:/msys64/mingw64/include/c++/15.2.0/iostream \
  C:/msys64/mingw64/include/c++/15.2.0/ostream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \

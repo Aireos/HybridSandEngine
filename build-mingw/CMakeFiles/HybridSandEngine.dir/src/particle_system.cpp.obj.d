@@ -342,6 +342,7 @@ CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj: \
  C:/dev/HybridSandEngine/include/gpu_compute.hpp \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/GL/glew.h \
  C:/msys64/mingw64/include/inttypes.h \
+ C:/dev/HybridSandEngine/include/brush.hpp \
  C:/dev/HybridSandEngine/include/physics.hpp \
  C:/msys64/mingw64/include/c++/15.2.0/algorithm \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h \

@@ -63,11 +63,15 @@ CMAKE_BINARY_DIR = /C/dev/HybridSandEngine/build-mingw
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/HybridSandCore.dir/all
 all: CMakeFiles/HybridSandEngine.dir/all
+all: CMakeFiles/BrushTest.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/HybridSandCore.dir/codegen
 codegen: CMakeFiles/HybridSandEngine.dir/codegen
+codegen: CMakeFiles/BrushTest.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,22 +79,56 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/HybridSandCore.dir/clean
 clean: CMakeFiles/HybridSandEngine.dir/clean
+clean: CMakeFiles/BrushTest.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/HybridSandCore.dir
+
+# All Build rule for target.
+CMakeFiles/HybridSandCore.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Built target HybridSandCore"
+.PHONY : CMakeFiles/HybridSandCore.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/HybridSandCore.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /C/dev/HybridSandEngine/build-mingw/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HybridSandCore.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /C/dev/HybridSandEngine/build-mingw/CMakeFiles 0
+.PHONY : CMakeFiles/HybridSandCore.dir/rule
+
+# Convenience name for target.
+HybridSandCore: CMakeFiles/HybridSandCore.dir/rule
+.PHONY : HybridSandCore
+
+# codegen rule for target.
+CMakeFiles/HybridSandCore.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=4,5,6,7,8,9,10,11 "Finished codegen for target HybridSandCore"
+.PHONY : CMakeFiles/HybridSandCore.dir/codegen
+
+# clean rule for target.
+CMakeFiles/HybridSandCore.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/clean
+.PHONY : CMakeFiles/HybridSandCore.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/HybridSandEngine.dir
 
 # All Build rule for target.
-CMakeFiles/HybridSandEngine.dir/all:
+CMakeFiles/HybridSandEngine.dir/all: CMakeFiles/HybridSandCore.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target HybridSandEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=12,13,14 "Built target HybridSandEngine"
 .PHONY : CMakeFiles/HybridSandEngine.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/HybridSandEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /C/dev/HybridSandEngine/build-mingw/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /C/dev/HybridSandEngine/build-mingw/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/HybridSandEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /C/dev/HybridSandEngine/build-mingw/CMakeFiles 0
 .PHONY : CMakeFiles/HybridSandEngine.dir/rule
@@ -102,13 +140,45 @@ HybridSandEngine: CMakeFiles/HybridSandEngine.dir/rule
 # codegen rule for target.
 CMakeFiles/HybridSandEngine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Finished codegen for target HybridSandEngine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=12,13,14 "Finished codegen for target HybridSandEngine"
 .PHONY : CMakeFiles/HybridSandEngine.dir/codegen
 
 # clean rule for target.
 CMakeFiles/HybridSandEngine.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/clean
 .PHONY : CMakeFiles/HybridSandEngine.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/BrushTest.dir
+
+# All Build rule for target.
+CMakeFiles/BrushTest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=1,2,3 "Built target BrushTest"
+.PHONY : CMakeFiles/BrushTest.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/BrushTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /C/dev/HybridSandEngine/build-mingw/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BrushTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /C/dev/HybridSandEngine/build-mingw/CMakeFiles 0
+.PHONY : CMakeFiles/BrushTest.dir/rule
+
+# Convenience name for target.
+BrushTest: CMakeFiles/BrushTest.dir/rule
+.PHONY : BrushTest
+
+# codegen rule for target.
+CMakeFiles/BrushTest.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=1,2,3 "Finished codegen for target BrushTest"
+.PHONY : CMakeFiles/BrushTest.dir/codegen
+
+# clean rule for target.
+CMakeFiles/BrushTest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/clean
+.PHONY : CMakeFiles/BrushTest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

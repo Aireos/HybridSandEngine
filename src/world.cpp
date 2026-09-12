@@ -28,18 +28,12 @@ void World::spawn_particle(const glm::vec2& pos, Material mat, const glm::vec2& 
     particle_system_->add_particle(pos, vel, mat);
 }
 
+void World::paint_circle(const glm::vec2& pos, float radius, Material mat) {
+    particle_system_->add_particles_in_circle(pos, radius, mat);
+}
+
 void World::destroy_circle(const glm::vec2& pos, float radius) {
-    // Mark particles in radius for deletion
-    const auto& particles = particle_system_->get_particles();
-    uint32_t count = particle_system_->get_particle_count();
-    
-    for (uint32_t i = 0; i < count; ++i) {
-        glm::vec2 diff = particles[i].position - pos;
-        if (glm::length(diff) < radius) {
-            // Remove particle (simplified: set life to 0)
-            const_cast<Particle&>(particles[i]).life = 0;
-        }
-    }
+    particle_system_->remove_particles_in_circle(pos, radius);
 }
 
 const PerfStats& World::get_stats() const {

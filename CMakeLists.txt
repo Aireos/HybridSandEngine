@@ -20,20 +20,19 @@ include_directories(${OPENGL_INCLUDE_DIRS})
 include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CMAKE_SOURCE_DIR}/src)
 
-# Source files
-set(SOURCES
-    src/main.cpp
-    src/engine.cpp
+# Core library sources
+set(CORE_SOURCES
     src/world.cpp
     src/particle_system.cpp
     src/gpu_compute.cpp
     src/thread_pool.cpp
     src/renderer.cpp
     src/physics.cpp
+    src/brush.cpp
 )
 
-set(HEADERS
-    include/engine.hpp
+# Core library headers
+set(CORE_HEADERS
     include/world.hpp
     include/particle_system.hpp
     include/gpu_compute.hpp
@@ -41,13 +40,16 @@ set(HEADERS
     include/renderer.hpp
     include/physics.hpp
     include/common.hpp
+    include/brush.hpp
 )
 
-# Create executable
-add_executable(HybridSandEngine ${SOURCES} ${HEADERS})
+# Simulation and engine modules are reusable by the sandbox and future tools.
+add_library(HybridSandCore STATIC ${CORE_SOURCES} ${CORE_HEADERS})
 
-# Link libraries
-target_link_libraries(HybridSandEngine 
+# The executable is the current interactive sandbox: input, window, and app loop.
+add_executable(HybridSandEngine src/main.cpp src/engine.cpp include/engine.hpp)
+
+set(COMMON_LIBRARIES
     ${SDL2_LIBRARIES}
     ${OPENGL_LIBRARIES}
     GLEW::GLEW
@@ -55,9 +57,19 @@ target_link_libraries(HybridSandEngine
     Threads::Threads
 )
 
+target_link_libraries(HybridSandCore PUBLIC ${COMMON_LIBRARIES})
+target_link_libraries(HybridSandEngine PRIVATE HybridSandCore)
+
+enable_testing()
+add_executable(BrushTest tests/brush_test.cpp src/brush.cpp)
+target_link_libraries(BrushTest PRIVATE glm::glm)
+add_test(NAME BrushTest COMMAND BrushTest)
+
 # Compiler optimizations
 if(MSVC)
+    target_compile_options(HybridSandCore PRIVATE /O2 /arch:AVX2)
     target_compile_options(HybridSandEngine PRIVATE /O2 /arch:AVX2)
 else()
+    target_compile_options(HybridSandCore PRIVATE -O3 -march=native -ffast-math)
     target_compile_options(HybridSandEngine PRIVATE -O3 -march=native -ffast-math)
 endif()

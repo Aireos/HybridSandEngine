@@ -102,126 +102,25 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HybridSandEngine.dir/src/engine.cpp.s"
 	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /C/dev/HybridSandEngine/src/engine.cpp -o CMakeFiles/HybridSandEngine.dir/src/engine.cpp.s
 
-CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj: CMakeFiles/HybridSandEngine.dir/flags.make
-CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj: CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp
-CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj: C:/dev/HybridSandEngine/src/world.cpp
-CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj: CMakeFiles/HybridSandEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj -MF CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj.d -o CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj -c /C/dev/HybridSandEngine/src/world.cpp
-
-CMakeFiles/HybridSandEngine.dir/src/world.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HybridSandEngine.dir/src/world.cpp.i"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /C/dev/HybridSandEngine/src/world.cpp > CMakeFiles/HybridSandEngine.dir/src/world.cpp.i
-
-CMakeFiles/HybridSandEngine.dir/src/world.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HybridSandEngine.dir/src/world.cpp.s"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /C/dev/HybridSandEngine/src/world.cpp -o CMakeFiles/HybridSandEngine.dir/src/world.cpp.s
-
-CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj: CMakeFiles/HybridSandEngine.dir/flags.make
-CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj: CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp
-CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj: C:/dev/HybridSandEngine/src/particle_system.cpp
-CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj: CMakeFiles/HybridSandEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj -MF CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj.d -o CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj -c /C/dev/HybridSandEngine/src/particle_system.cpp
-
-CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.i"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /C/dev/HybridSandEngine/src/particle_system.cpp > CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.i
-
-CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.s"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /C/dev/HybridSandEngine/src/particle_system.cpp -o CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.s
-
-CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj: CMakeFiles/HybridSandEngine.dir/flags.make
-CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj: CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp
-CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj: C:/dev/HybridSandEngine/src/gpu_compute.cpp
-CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj: CMakeFiles/HybridSandEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj -MF CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj.d -o CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj -c /C/dev/HybridSandEngine/src/gpu_compute.cpp
-
-CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.i"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /C/dev/HybridSandEngine/src/gpu_compute.cpp > CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.i
-
-CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.s"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /C/dev/HybridSandEngine/src/gpu_compute.cpp -o CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.s
-
-CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj: CMakeFiles/HybridSandEngine.dir/flags.make
-CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj: CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp
-CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj: C:/dev/HybridSandEngine/src/thread_pool.cpp
-CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj: CMakeFiles/HybridSandEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj -MF CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj.d -o CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj -c /C/dev/HybridSandEngine/src/thread_pool.cpp
-
-CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.i"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /C/dev/HybridSandEngine/src/thread_pool.cpp > CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.i
-
-CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.s"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /C/dev/HybridSandEngine/src/thread_pool.cpp -o CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.s
-
-CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj: CMakeFiles/HybridSandEngine.dir/flags.make
-CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj: CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp
-CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj: C:/dev/HybridSandEngine/src/renderer.cpp
-CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj: CMakeFiles/HybridSandEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj -MF CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj.d -o CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj -c /C/dev/HybridSandEngine/src/renderer.cpp
-
-CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.i"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /C/dev/HybridSandEngine/src/renderer.cpp > CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.i
-
-CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.s"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /C/dev/HybridSandEngine/src/renderer.cpp -o CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.s
-
-CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj: CMakeFiles/HybridSandEngine.dir/flags.make
-CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj: CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp
-CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj: C:/dev/HybridSandEngine/src/physics.cpp
-CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj: CMakeFiles/HybridSandEngine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj -MF CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj.d -o CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj -c /C/dev/HybridSandEngine/src/physics.cpp
-
-CMakeFiles/HybridSandEngine.dir/src/physics.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HybridSandEngine.dir/src/physics.cpp.i"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /C/dev/HybridSandEngine/src/physics.cpp > CMakeFiles/HybridSandEngine.dir/src/physics.cpp.i
-
-CMakeFiles/HybridSandEngine.dir/src/physics.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HybridSandEngine.dir/src/physics.cpp.s"
-	/C/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /C/dev/HybridSandEngine/src/physics.cpp -o CMakeFiles/HybridSandEngine.dir/src/physics.cpp.s
-
 # Object files for target HybridSandEngine
 HybridSandEngine_OBJECTS = \
 "CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj" \
-"CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj" \
-"CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj" \
-"CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj" \
-"CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj" \
-"CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj" \
-"CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj" \
-"CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj"
+"CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj"
 
 # External object files for target HybridSandEngine
 HybridSandEngine_EXTERNAL_OBJECTS =
 
 HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj
 HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj
-HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj
-HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj
-HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj
-HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj
-HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj
-HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj
 HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/build.make
+HybridSandEngine.exe: libHybridSandCore.a
 HybridSandEngine.exe: C:/dev/vcpkg/installed/x64-mingw-dynamic/debug/lib/libSDL2maind.a
 HybridSandEngine.exe: C:/dev/vcpkg/installed/x64-mingw-dynamic/debug/lib/libSDL2d.dll.a
 HybridSandEngine.exe: C:/dev/vcpkg/installed/x64-mingw-dynamic/debug/lib/libglew32d.dll.a
 HybridSandEngine.exe: C:/dev/vcpkg/installed/x64-mingw-dynamic/debug/lib/libglm.a
 HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/linkLibs.rsp
 HybridSandEngine.exe: CMakeFiles/HybridSandEngine.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable HybridSandEngine.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/C/dev/HybridSandEngine/build-mingw/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable HybridSandEngine.exe"
 	"/C/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/HybridSandEngine.dir/objects.a
 	/C/msys64/mingw64/bin/ar.exe qc CMakeFiles/HybridSandEngine.dir/objects.a @CMakeFiles/HybridSandEngine.dir/objects1.rsp
 	/C/msys64/mingw64/bin/c++.exe -g -Wl,--whole-archive CMakeFiles/HybridSandEngine.dir/objects.a -Wl,--no-whole-archive -o HybridSandEngine.exe -Wl,--out-implib,libHybridSandEngine.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/HybridSandEngine.dir/linkLibs.rsp

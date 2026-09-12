@@ -23,6 +23,7 @@ private:
     std::unique_ptr<World> world_;
     bool running_;
     float delta_time_;
+    float brush_radius_;
     std::chrono::high_resolution_clock::time_point last_frame_time_;
 
     // Input handling

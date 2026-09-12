@@ -19,6 +19,9 @@ public:
     // Add particle at world position
     void spawn_particle(const glm::vec2& pos, Material mat, const glm::vec2& vel = glm::vec2(0));
 
+    // Add material in a world-space circle
+    void paint_circle(const glm::vec2& pos, float radius, Material mat);
+
     // Destroy material in radius (digging)
     void destroy_circle(const glm::vec2& pos, float radius);
 

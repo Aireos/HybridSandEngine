@@ -14,6 +14,12 @@ public:
     // Add particle to simulation
     void add_particle(const glm::vec2& pos, const glm::vec2& vel, Material mat);
 
+    // Add particles inside a world-space circle
+    void add_particles_in_circle(const glm::vec2& pos, float radius, Material mat);
+
+    // Remove particles inside a world-space circle
+    void remove_particles_in_circle(const glm::vec2& pos, float radius);
+
     // Simulate one frame
     void update(float dt);
 

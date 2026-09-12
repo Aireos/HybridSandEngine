@@ -1,0 +1,2 @@
+C:/msys64/mingw64/bin/ar.exe qc libHybridSandCore.a CMakeFiles/HybridSandCore.dir/src/world.cpp.obj CMakeFiles/HybridSandCore.dir/src/particle_system.cpp.obj CMakeFiles/HybridSandCore.dir/src/gpu_compute.cpp.obj CMakeFiles/HybridSandCore.dir/src/thread_pool.cpp.obj CMakeFiles/HybridSandCore.dir/src/renderer.cpp.obj CMakeFiles/HybridSandCore.dir/src/physics.cpp.obj CMakeFiles/HybridSandCore.dir/src/brush.cpp.obj
+C:/msys64/mingw64/bin/ranlib.exe libHybridSandCore.a

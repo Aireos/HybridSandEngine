@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /C/dev/HybridSandEngine/build-mingw
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"/C/Program Files/CMake/bin/ctest.exe" $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -117,6 +127,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named HybridSandCore
+
+# Build rule for target.
+HybridSandCore: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 HybridSandCore
+.PHONY : HybridSandCore
+
+# fast build rule for target.
+HybridSandCore/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/build
+.PHONY : HybridSandCore/fast
+
+#=============================================================================
 # Target rules for targets named HybridSandEngine
 
 # Build rule for target.
@@ -128,6 +151,46 @@ HybridSandEngine: cmake_check_build_system
 HybridSandEngine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/build
 .PHONY : HybridSandEngine/fast
+
+#=============================================================================
+# Target rules for targets named BrushTest
+
+# Build rule for target.
+BrushTest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BrushTest
+.PHONY : BrushTest
+
+# fast build rule for target.
+BrushTest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/build
+.PHONY : BrushTest/fast
+
+src/brush.obj: src/brush.cpp.obj
+.PHONY : src/brush.obj
+
+# target to build an object file
+src/brush.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/brush.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/src/brush.cpp.obj
+.PHONY : src/brush.cpp.obj
+
+src/brush.i: src/brush.cpp.i
+.PHONY : src/brush.i
+
+# target to preprocess a source file
+src/brush.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/brush.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/src/brush.cpp.i
+.PHONY : src/brush.cpp.i
+
+src/brush.s: src/brush.cpp.s
+.PHONY : src/brush.s
+
+# target to generate assembly for a file
+src/brush.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/brush.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/src/brush.cpp.s
+.PHONY : src/brush.cpp.s
 
 src/engine.obj: src/engine.cpp.obj
 .PHONY : src/engine.obj
@@ -158,7 +221,7 @@ src/gpu_compute.obj: src/gpu_compute.cpp.obj
 
 # target to build an object file
 src/gpu_compute.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/gpu_compute.cpp.obj
 .PHONY : src/gpu_compute.cpp.obj
 
 src/gpu_compute.i: src/gpu_compute.cpp.i
@@ -166,7 +229,7 @@ src/gpu_compute.i: src/gpu_compute.cpp.i
 
 # target to preprocess a source file
 src/gpu_compute.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/gpu_compute.cpp.i
 .PHONY : src/gpu_compute.cpp.i
 
 src/gpu_compute.s: src/gpu_compute.cpp.s
@@ -174,7 +237,7 @@ src/gpu_compute.s: src/gpu_compute.cpp.s
 
 # target to generate assembly for a file
 src/gpu_compute.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/gpu_compute.cpp.s
 .PHONY : src/gpu_compute.cpp.s
 
 src/main.obj: src/main.cpp.obj
@@ -206,7 +269,7 @@ src/particle_system.obj: src/particle_system.cpp.obj
 
 # target to build an object file
 src/particle_system.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/particle_system.cpp.obj
 .PHONY : src/particle_system.cpp.obj
 
 src/particle_system.i: src/particle_system.cpp.i
@@ -214,7 +277,7 @@ src/particle_system.i: src/particle_system.cpp.i
 
 # target to preprocess a source file
 src/particle_system.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/particle_system.cpp.i
 .PHONY : src/particle_system.cpp.i
 
 src/particle_system.s: src/particle_system.cpp.s
@@ -222,7 +285,7 @@ src/particle_system.s: src/particle_system.cpp.s
 
 # target to generate assembly for a file
 src/particle_system.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/particle_system.cpp.s
 .PHONY : src/particle_system.cpp.s
 
 src/physics.obj: src/physics.cpp.obj
@@ -230,7 +293,7 @@ src/physics.obj: src/physics.cpp.obj
 
 # target to build an object file
 src/physics.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/physics.cpp.obj
 .PHONY : src/physics.cpp.obj
 
 src/physics.i: src/physics.cpp.i
@@ -238,7 +301,7 @@ src/physics.i: src/physics.cpp.i
 
 # target to preprocess a source file
 src/physics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/physics.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/physics.cpp.i
 .PHONY : src/physics.cpp.i
 
 src/physics.s: src/physics.cpp.s
@@ -246,7 +309,7 @@ src/physics.s: src/physics.cpp.s
 
 # target to generate assembly for a file
 src/physics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/physics.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/physics.cpp.s
 .PHONY : src/physics.cpp.s
 
 src/renderer.obj: src/renderer.cpp.obj
@@ -254,7 +317,7 @@ src/renderer.obj: src/renderer.cpp.obj
 
 # target to build an object file
 src/renderer.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/renderer.cpp.obj
 .PHONY : src/renderer.cpp.obj
 
 src/renderer.i: src/renderer.cpp.i
@@ -262,7 +325,7 @@ src/renderer.i: src/renderer.cpp.i
 
 # target to preprocess a source file
 src/renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/renderer.cpp.i
 .PHONY : src/renderer.cpp.i
 
 src/renderer.s: src/renderer.cpp.s
@@ -270,7 +333,7 @@ src/renderer.s: src/renderer.cpp.s
 
 # target to generate assembly for a file
 src/renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/renderer.cpp.s
 .PHONY : src/renderer.cpp.s
 
 src/thread_pool.obj: src/thread_pool.cpp.obj
@@ -278,7 +341,7 @@ src/thread_pool.obj: src/thread_pool.cpp.obj
 
 # target to build an object file
 src/thread_pool.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/thread_pool.cpp.obj
 .PHONY : src/thread_pool.cpp.obj
 
 src/thread_pool.i: src/thread_pool.cpp.i
@@ -286,7 +349,7 @@ src/thread_pool.i: src/thread_pool.cpp.i
 
 # target to preprocess a source file
 src/thread_pool.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/thread_pool.cpp.i
 .PHONY : src/thread_pool.cpp.i
 
 src/thread_pool.s: src/thread_pool.cpp.s
@@ -294,7 +357,7 @@ src/thread_pool.s: src/thread_pool.cpp.s
 
 # target to generate assembly for a file
 src/thread_pool.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/thread_pool.cpp.s
 .PHONY : src/thread_pool.cpp.s
 
 src/world.obj: src/world.cpp.obj
@@ -302,7 +365,7 @@ src/world.obj: src/world.cpp.obj
 
 # target to build an object file
 src/world.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/world.cpp.obj
 .PHONY : src/world.cpp.obj
 
 src/world.i: src/world.cpp.i
@@ -310,7 +373,7 @@ src/world.i: src/world.cpp.i
 
 # target to preprocess a source file
 src/world.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/world.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/world.cpp.i
 .PHONY : src/world.cpp.i
 
 src/world.s: src/world.cpp.s
@@ -318,8 +381,32 @@ src/world.s: src/world.cpp.s
 
 # target to generate assembly for a file
 src/world.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandEngine.dir/build.make CMakeFiles/HybridSandEngine.dir/src/world.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HybridSandCore.dir/build.make CMakeFiles/HybridSandCore.dir/src/world.cpp.s
 .PHONY : src/world.cpp.s
+
+tests/brush_test.obj: tests/brush_test.cpp.obj
+.PHONY : tests/brush_test.obj
+
+# target to build an object file
+tests/brush_test.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/tests/brush_test.cpp.obj
+.PHONY : tests/brush_test.cpp.obj
+
+tests/brush_test.i: tests/brush_test.cpp.i
+.PHONY : tests/brush_test.i
+
+# target to preprocess a source file
+tests/brush_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/tests/brush_test.cpp.i
+.PHONY : tests/brush_test.cpp.i
+
+tests/brush_test.s: tests/brush_test.cpp.s
+.PHONY : tests/brush_test.s
+
+# target to generate assembly for a file
+tests/brush_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/BrushTest.dir/build.make CMakeFiles/BrushTest.dir/tests/brush_test.cpp.s
+.PHONY : tests/brush_test.cpp.s
 
 # Help Target
 help:
@@ -329,7 +416,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... BrushTest"
+	@echo "... HybridSandCore"
 	@echo "... HybridSandEngine"
+	@echo "... src/brush.obj"
+	@echo "... src/brush.i"
+	@echo "... src/brush.s"
 	@echo "... src/engine.obj"
 	@echo "... src/engine.i"
 	@echo "... src/engine.s"
@@ -354,6 +447,9 @@ help:
 	@echo "... src/world.obj"
 	@echo "... src/world.i"
 	@echo "... src/world.s"
+	@echo "... tests/brush_test.obj"
+	@echo "... tests/brush_test.i"
+	@echo "... tests/brush_test.s"
 .PHONY : help
 
 

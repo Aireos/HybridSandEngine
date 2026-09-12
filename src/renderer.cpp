@@ -1,4 +1,5 @@
 #include "renderer.hpp"
+#include <glm/gtc/matrix_transform.hpp>
 #include <iostream>
 #include <string>
 #include <stdexcept>
@@ -99,10 +100,12 @@ void Renderer::init() {
     // Create VAO
     glGenVertexArrays(1, &vao_particles_);
     glBindVertexArray(vao_particles_);
+
+    glGenBuffers(1, &vbo_positions_);
+    glGenBuffers(1, &vbo_materials_);
 }
 
 void Renderer::render_particles(const Particle* particles, uint32_t count) {
-    // Update VBOs with particle data
     if (count == 0) return;
     
     std::vector<glm::vec2> positions;
@@ -116,9 +119,41 @@ void Renderer::render_particles(const Particle* particles, uint32_t count) {
         materials.push_back(static_cast<uint32_t>(particles[i].material));
     }
     
-    // Upload to VBOs and render
     glUseProgram(program_render_);
     glBindVertexArray(vao_particles_);
+
+    glm::mat4 projection = glm::ortho(
+        0.0f, static_cast<float>(width_),
+        0.0f, static_cast<float>(height_),
+        -1.0f, 1.0f
+    );
+    glUniformMatrix4fv(
+        glGetUniformLocation(program_render_, "projection"),
+        1,
+        GL_FALSE,
+        &projection[0][0]
+    );
+
+    glBindBuffer(GL_ARRAY_BUFFER, vbo_positions_);
+    glBufferData(
+        GL_ARRAY_BUFFER,
+        positions.size() * sizeof(glm::vec2),
+        positions.data(),
+        GL_STREAM_DRAW
+    );
+    glEnableVertexAttribArray(0);
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(glm::vec2), nullptr);
+
+    glBindBuffer(GL_ARRAY_BUFFER, vbo_materials_);
+    glBufferData(
+        GL_ARRAY_BUFFER,
+        materials.size() * sizeof(uint32_t),
+        materials.data(),
+        GL_STREAM_DRAW
+    );
+    glEnableVertexAttribArray(1);
+    glVertexAttribIPointer(1, 1, GL_UNSIGNED_INT, sizeof(uint32_t), nullptr);
+
     glPointSize(1.0f);
     glDrawArrays(GL_POINTS, 0, count);
 }

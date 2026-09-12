@@ -93,7 +93,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -120,7 +122,9 @@
 					"name" : "HybridSandEngine",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1,
+						2
 					]
 				}
 			],
@@ -128,8 +132,22 @@
 			[
 				{
 					"directoryIndex" : 0,
+					"id" : "BrushTest::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BrushTest-Debug-1520d9b41781519ba8ed.json",
+					"name" : "BrushTest",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "HybridSandCore::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HybridSandCore-Debug-ae042163d0aa3a6bd6e4.json",
+					"name" : "HybridSandCore",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "HybridSandEngine::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-HybridSandEngine-Debug-6221e967d056c4f2e04b.json",
+					"jsonFile" : "target-HybridSandEngine-Debug-146c7b7db87adbd10c3b.json",
 					"name" : "HybridSandEngine",
 					"projectIndex" : 0
 				}

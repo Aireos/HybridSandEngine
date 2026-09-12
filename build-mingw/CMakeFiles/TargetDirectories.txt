@@ -1,3 +1,6 @@
+C:/dev/HybridSandEngine/build-mingw/CMakeFiles/HybridSandCore.dir
 C:/dev/HybridSandEngine/build-mingw/CMakeFiles/HybridSandEngine.dir
+C:/dev/HybridSandEngine/build-mingw/CMakeFiles/BrushTest.dir
+C:/dev/HybridSandEngine/build-mingw/CMakeFiles/test.dir
 C:/dev/HybridSandEngine/build-mingw/CMakeFiles/edit_cache.dir
 C:/dev/HybridSandEngine/build-mingw/CMakeFiles/rebuild_cache.dir

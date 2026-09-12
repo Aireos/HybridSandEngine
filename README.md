@@ -19,6 +19,29 @@ A high-performance falling sand simulation engine targeting 60+ FPS with 10M+ pa
 5. **Renderer** - OpenGL 4.3+ rendering pipeline
 6. **Physics** - Material properties and collision response
 
+### Repository Boundaries
+
+The CMake project is split into two targets so the code can be moved into separate repositories without changing its public boundary:
+
+- `HybridSandCore` - world state, particles, physics, GPU compute, threading, rendering modules, and shared brush operations.
+- `HybridSandEngine` - the interactive sandbox executable, input handling, and application loop.
+
+The future layout can use `HybridSandCore` as a library repository and keep the current executable, brush controls, and future editor tools in a separate sandbox/tools repository. The sandbox should link the core target instead of copying simulation code.
+
+To verify the reusable boundary locally:
+
+```powershell
+cmake -S . -B build-mingw
+cmake --build build-mingw
+ctest --test-dir build-mingw --output-on-failure
+```
+
+### Brush Controls
+
+- Hold the left mouse button to paint sand.
+- Hold the right mouse button to erase particles.
+- Press Escape to quit.
+
 ## Performance Targets
 
 - **10M+ particles** at 60 FPS

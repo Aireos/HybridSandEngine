@@ -1,9 +1,10 @@
 #include "engine.hpp"
 #include <SDL2/SDL.h>
+#include <algorithm>
 #include <iostream>
 #include <random>
 
-Engine::Engine() : running_(false), delta_time_(0.0f) {}
+Engine::Engine() : running_(false), delta_time_(0.0f), brush_radius_(8.0f) {}
 
 Engine::~Engine() {
     shutdown();
@@ -75,6 +76,20 @@ void Engine::handle_input() {
                 }
                 break;
         }
+    }
+
+    int mouse_x = 0;
+    int mouse_y = 0;
+    const Uint32 mouse_buttons = SDL_GetMouseState(&mouse_x, &mouse_y);
+    const glm::vec2 brush_position(
+        static_cast<float>(mouse_x),
+        static_cast<float>(GRID_HEIGHT - 1 - mouse_y)
+    );
+
+    if ((mouse_buttons & SDL_BUTTON(SDL_BUTTON_LEFT)) != 0) {
+        world_->paint_circle(brush_position, brush_radius_, Material::SAND);
+    } else if ((mouse_buttons & SDL_BUTTON(SDL_BUTTON_RIGHT)) != 0) {
+        world_->destroy_circle(brush_position, brush_radius_);
     }
 }
 

@@ -1,0 +1,1 @@
+-I"C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2" -IC:/dev/HybridSandEngine/include -IC:/dev/HybridSandEngine/src -isystem "C:/dev/vcpkg/installed/x64-mingw-dynamic/include"

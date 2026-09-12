@@ -1,6 +1,48 @@
 [
 {
   "directory": "C:/dev/HybridSandEngine/build-mingw",
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandCore.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandCore.dir/src/world.cpp.obj -c /C/dev/HybridSandEngine/src/world.cpp",
+  "file": "C:/dev/HybridSandEngine/src/world.cpp",
+  "output": "CMakeFiles/HybridSandCore.dir/src/world.cpp.obj"
+},
+{
+  "directory": "C:/dev/HybridSandEngine/build-mingw",
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandCore.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandCore.dir/src/particle_system.cpp.obj -c /C/dev/HybridSandEngine/src/particle_system.cpp",
+  "file": "C:/dev/HybridSandEngine/src/particle_system.cpp",
+  "output": "CMakeFiles/HybridSandCore.dir/src/particle_system.cpp.obj"
+},
+{
+  "directory": "C:/dev/HybridSandEngine/build-mingw",
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandCore.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandCore.dir/src/gpu_compute.cpp.obj -c /C/dev/HybridSandEngine/src/gpu_compute.cpp",
+  "file": "C:/dev/HybridSandEngine/src/gpu_compute.cpp",
+  "output": "CMakeFiles/HybridSandCore.dir/src/gpu_compute.cpp.obj"
+},
+{
+  "directory": "C:/dev/HybridSandEngine/build-mingw",
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandCore.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandCore.dir/src/thread_pool.cpp.obj -c /C/dev/HybridSandEngine/src/thread_pool.cpp",
+  "file": "C:/dev/HybridSandEngine/src/thread_pool.cpp",
+  "output": "CMakeFiles/HybridSandCore.dir/src/thread_pool.cpp.obj"
+},
+{
+  "directory": "C:/dev/HybridSandEngine/build-mingw",
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandCore.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandCore.dir/src/renderer.cpp.obj -c /C/dev/HybridSandEngine/src/renderer.cpp",
+  "file": "C:/dev/HybridSandEngine/src/renderer.cpp",
+  "output": "CMakeFiles/HybridSandCore.dir/src/renderer.cpp.obj"
+},
+{
+  "directory": "C:/dev/HybridSandEngine/build-mingw",
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandCore.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandCore.dir/src/physics.cpp.obj -c /C/dev/HybridSandEngine/src/physics.cpp",
+  "file": "C:/dev/HybridSandEngine/src/physics.cpp",
+  "output": "CMakeFiles/HybridSandCore.dir/src/physics.cpp.obj"
+},
+{
+  "directory": "C:/dev/HybridSandEngine/build-mingw",
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandCore.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandCore.dir/src/brush.cpp.obj -c /C/dev/HybridSandEngine/src/brush.cpp",
+  "file": "C:/dev/HybridSandEngine/src/brush.cpp",
+  "output": "CMakeFiles/HybridSandCore.dir/src/brush.cpp.obj"
+},
+{
+  "directory": "C:/dev/HybridSandEngine/build-mingw",
   "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj -c /C/dev/HybridSandEngine/src/main.cpp",
   "file": "C:/dev/HybridSandEngine/src/main.cpp",
   "output": "CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj"
@@ -13,38 +55,14 @@
 },
 {
   "directory": "C:/dev/HybridSandEngine/build-mingw",
-  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj -c /C/dev/HybridSandEngine/src/world.cpp",
-  "file": "C:/dev/HybridSandEngine/src/world.cpp",
-  "output": "CMakeFiles/HybridSandEngine.dir/src/world.cpp.obj"
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/BrushTest.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/BrushTest.dir/tests/brush_test.cpp.obj -c /C/dev/HybridSandEngine/tests/brush_test.cpp",
+  "file": "C:/dev/HybridSandEngine/tests/brush_test.cpp",
+  "output": "CMakeFiles/BrushTest.dir/tests/brush_test.cpp.obj"
 },
 {
   "directory": "C:/dev/HybridSandEngine/build-mingw",
-  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj -c /C/dev/HybridSandEngine/src/particle_system.cpp",
-  "file": "C:/dev/HybridSandEngine/src/particle_system.cpp",
-  "output": "CMakeFiles/HybridSandEngine.dir/src/particle_system.cpp.obj"
-},
-{
-  "directory": "C:/dev/HybridSandEngine/build-mingw",
-  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj -c /C/dev/HybridSandEngine/src/gpu_compute.cpp",
-  "file": "C:/dev/HybridSandEngine/src/gpu_compute.cpp",
-  "output": "CMakeFiles/HybridSandEngine.dir/src/gpu_compute.cpp.obj"
-},
-{
-  "directory": "C:/dev/HybridSandEngine/build-mingw",
-  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj -c /C/dev/HybridSandEngine/src/thread_pool.cpp",
-  "file": "C:/dev/HybridSandEngine/src/thread_pool.cpp",
-  "output": "CMakeFiles/HybridSandEngine.dir/src/thread_pool.cpp.obj"
-},
-{
-  "directory": "C:/dev/HybridSandEngine/build-mingw",
-  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj -c /C/dev/HybridSandEngine/src/renderer.cpp",
-  "file": "C:/dev/HybridSandEngine/src/renderer.cpp",
-  "output": "CMakeFiles/HybridSandEngine.dir/src/renderer.cpp.obj"
-},
-{
-  "directory": "C:/dev/HybridSandEngine/build-mingw",
-  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/HybridSandEngine.dir/includes_CXX.rsp -g -std=gnu++17 -O3 -march=native -ffast-math -o CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj -c /C/dev/HybridSandEngine/src/physics.cpp",
-  "file": "C:/dev/HybridSandEngine/src/physics.cpp",
-  "output": "CMakeFiles/HybridSandEngine.dir/src/physics.cpp.obj"
+  "command": "/C/msys64/mingw64/bin/c++.exe  @CMakeFiles/BrushTest.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles/BrushTest.dir/src/brush.cpp.obj -c /C/dev/HybridSandEngine/src/brush.cpp",
+  "file": "C:/dev/HybridSandEngine/src/brush.cpp",
+  "output": "CMakeFiles/BrushTest.dir/src/brush.cpp.obj"
 }
 ]

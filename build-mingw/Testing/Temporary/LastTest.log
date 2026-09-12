@@ -1,0 +1,18 @@
+Start testing: Sep 12 17:22 Mountain Daylight Time
+----------------------------------------------------------
+1/1 Testing: BrushTest
+1/1 Test: BrushTest
+Command: "C:/dev/HybridSandEngine/build-mingw/BrushTest.exe"
+Directory: C:/dev/HybridSandEngine/build-mingw
+"BrushTest" start time: Sep 12 17:22 Mountain Daylight Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"BrushTest" end time: Sep 12 17:22 Mountain Daylight Time
+"BrushTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 12 17:22 Mountain Daylight Time

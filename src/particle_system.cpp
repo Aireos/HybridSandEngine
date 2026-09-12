@@ -1,4 +1,5 @@
 #include "particle_system.hpp"
+#include "brush.hpp"
 #include "physics.hpp"
 #include <algorithm>
 #include <chrono>
@@ -25,6 +26,14 @@ void ParticleSystem::add_particle(const glm::vec2& pos, const glm::vec2& vel, Ma
         };
         particle_count_++;
     }
+}
+
+void ParticleSystem::add_particles_in_circle(const glm::vec2& pos, float radius, Material mat) {
+    Brush::paint_circle(particles_, particle_count_, MAX_PARTICLES, pos, radius, mat);
+}
+
+void ParticleSystem::remove_particles_in_circle(const glm::vec2& pos, float radius) {
+    Brush::erase_circle(particles_, particle_count_, pos, radius);
 }
 
 void ParticleSystem::update(float dt) {
