@@ -13,7 +13,7 @@ const float TIME_STEP = 0.016f; // ~60 FPS
 const uint32_t THREAD_POOL_SIZE = 8;
 
 // Material types
-enum class Material : uint8_t {
+enum class Material : uint32_t {
     EMPTY = 0,
     SAND = 1,
     WATER = 2,
@@ -29,10 +29,10 @@ struct Particle {
     glm::vec2 position;
     glm::vec2 velocity;
     Material material;
-    uint8_t life;
-    uint16_t temperature;
-    uint8_t padding;
-} __attribute__((packed));
+    uint32_t life;
+    uint32_t temperature;
+    uint32_t padding;
+};
 
 static_assert(sizeof(Particle) == 32, "Particle struct must be 32 bytes for cache alignment");
 

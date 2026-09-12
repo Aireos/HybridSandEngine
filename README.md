@@ -214,7 +214,7 @@ From the vcpkg directory, install the dependencies:
 
 #### Windows (MinGW)
 ```cmd
-.\vcpkg install sdl2:x64-mingw-static glew:x64-mingw-static glm:x64-mingw-static
+ .\vcpkg install sdl2:x64-mingw-dynamic glew:x64-mingw-dynamic glm:x64-mingw-dynamic
 ```
 
 #### Linux/macOS
@@ -295,10 +295,11 @@ Paste this content (replace paths with your vcpkg path):
 {
     "cmake.configureSettings": {
         "CMAKE_TOOLCHAIN_FILE": "C:/dev/vcpkg/scripts/buildsystems/vcpkg.cmake",
-        "VCPKG_TARGET_TRIPLET": "x64-mingw-static"
+        "VCPKG_TARGET_TRIPLET": "x64-mingw-dynamic",
+        "CMAKE_MAKE_PROGRAM": "C:/msys64/usr/bin/make.exe"
     },
     "cmake.preferredGenerators": [
-        "MinGW Makefiles"
+        "MSYS Makefiles"
     ],
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

@@ -10,7 +10,9 @@ Engine::~Engine() {
 }
 
 void Engine::init() {
-    SDL_Init(SDL_INIT_VIDEO);
+    if (SDL_Init(SDL_INIT_VIDEO) != 0) {
+        throw std::runtime_error(std::string("Failed to initialize SDL: ") + SDL_GetError());
+    }
     
     world_ = std::make_unique<World>(GRID_WIDTH, GRID_HEIGHT);
     

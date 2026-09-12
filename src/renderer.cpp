@@ -1,6 +1,7 @@
 #include "renderer.hpp"
 #include <iostream>
 #include <string>
+#include <stdexcept>
 
 const char* VERTEX_SHADER = R"(
 #version 430 core
@@ -62,7 +63,7 @@ Renderer::~Renderer() {
 void Renderer::init() {
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
     SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
-    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_CORE_PROFILE);
+    SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
     
     window_ = SDL_CreateWindow(
         "Hybrid Sand Engine",
@@ -73,14 +74,12 @@ void Renderer::init() {
     );
     
     if (!window_) {
-        std::cerr << "Failed to create SDL window: " << SDL_GetError() << std::endl;
-        return;
+        throw std::runtime_error(std::string("Failed to create SDL window: ") + SDL_GetError());
     }
     
     gl_context_ = SDL_GL_CreateContext(window_);
     if (!gl_context_) {
-        std::cerr << "Failed to create OpenGL context: " << SDL_GetError() << std::endl;
-        return;
+        throw std::runtime_error(std::string("Failed to create OpenGL context: ") + SDL_GetError());
     }
     
     SDL_GL_MakeCurrent(window_, gl_context_);
@@ -88,8 +87,7 @@ void Renderer::init() {
     
     glewExperimental = GL_TRUE;
     if (glewInit() != GLEW_OK) {
-        std::cerr << "Failed to initialize GLEW" << std::endl;
-        return;
+        throw std::runtime_error("Failed to initialize GLEW");
     }
     
     glViewport(0, 0, width_, height_);

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/dev/HybridSandEngine/build-mingw/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

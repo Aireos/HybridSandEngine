@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
-project(HybridSandEngine)
+
+project(HybridSandEngine LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -8,6 +9,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(SDL2 REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(GLEW REQUIRED)
+find_package(glm CONFIG REQUIRED)
 
 # Add thread support
 find_package(Threads REQUIRED)
@@ -49,6 +51,7 @@ target_link_libraries(HybridSandEngine
     ${SDL2_LIBRARIES}
     ${OPENGL_LIBRARIES}
     GLEW::GLEW
+    glm::glm
     Threads::Threads
 )
 

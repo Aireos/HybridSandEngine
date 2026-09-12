@@ -3,8 +3,9 @@
 
 World::World(uint32_t width, uint32_t height)
     : width_(width), height_(height) {
-    particle_system_ = std::make_unique<ParticleSystem>(width, height);
     renderer_ = std::make_unique<Renderer>(width, height);
+    renderer_->init();
+    particle_system_ = std::make_unique<ParticleSystem>(width, height);
 }
 
 World::~World() {}
