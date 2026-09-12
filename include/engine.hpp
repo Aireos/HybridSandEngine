@@ -1,7 +1,7 @@
 #pragma once
 
-#include "world.hpp"
-#include "common.hpp"
+#include <HybridSandCore/world.hpp>
+#include <HybridSandCore/common.hpp>
 #include <memory>
 #include <chrono>
 
