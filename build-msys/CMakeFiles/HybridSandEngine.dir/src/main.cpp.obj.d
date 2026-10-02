@@ -250,9 +250,15 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/integer.hpp \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/func_integer.inl \
  C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/particle_system.hpp \
- C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/thread_pool.hpp \
- C:/msys64/mingw64/include/c++/15.2.0/thread \
- C:/msys64/mingw64/include/c++/15.2.0/bits/std_thread.h \
+ C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/gpu_compute.hpp \
+ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/GL/glew.h \
+ C:/msys64/mingw64/include/inttypes.h \
+ C:/msys64/mingw64/include/c++/15.2.0/memory \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/align.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
  C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
@@ -266,7 +272,9 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/_mingw_stat64.h \
  C:/msys64/mingw64/include/swprintf.inl \
  C:/msys64/mingw64/include/sec_api/wchar_s.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
+ C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
  C:/msys64/mingw64/include/pthread.h \
@@ -282,29 +290,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/pthread_compat.h \
  C:/msys64/mingw64/include/sched.h \
  C:/msys64/mingw64/include/pthread_unistd.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h \
- C:/msys64/mingw64/include/c++/15.2.0/ratio \
- C:/msys64/mingw64/include/c++/15.2.0/ctime \
- C:/msys64/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
- C:/msys64/mingw64/include/c++/15.2.0/cerrno \
- C:/msys64/mingw64/include/c++/15.2.0/queue \
- C:/msys64/mingw64/include/c++/15.2.0/deque \
- C:/msys64/mingw64/include/c++/15.2.0/bits/stl_deque.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/deque.tcc \
- C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/stl_queue.h \
- C:/msys64/mingw64/include/c++/15.2.0/atomic \
- C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
- C:/msys64/mingw64/include/c++/15.2.0/memory \
- C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/align.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_base.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
- C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h \
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
  C:/msys64/mingw64/include/c++/15.2.0/ext/concurrence.h \
  C:/msys64/mingw64/include/c++/15.2.0/exception \
@@ -312,39 +297,11 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr_atomic.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
  C:/msys64/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
  C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
  C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
- C:/msys64/mingw64/include/c++/15.2.0/future \
- C:/msys64/mingw64/include/c++/15.2.0/mutex \
- C:/msys64/mingw64/include/c++/15.2.0/bits/std_mutex.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/unique_lock.h \
- C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
- C:/msys64/mingw64/include/c++/15.2.0/condition_variable \
- C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
- C:/msys64/mingw64/include/c++/15.2.0/system_error \
- C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
- C:/msys64/mingw64/include/c++/15.2.0/string \
- C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
- C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
- C:/msys64/mingw64/include/c++/15.2.0/clocale \
- C:/msys64/mingw64/include/locale.h C:/msys64/mingw64/include/stdio.h \
- C:/msys64/mingw64/include/sec_api/stdio_s.h \
- C:/msys64/mingw64/include/c++/15.2.0/cctype \
- C:/msys64/mingw64/include/ctype.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
- C:/msys64/mingw64/include/c++/15.2.0/string_view \
- C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
- C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
- C:/msys64/mingw64/include/c++/15.2.0/cstdio \
- C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
- C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
- C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_futex.h \
- C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/gpu_compute.hpp \
- C:/dev/vcpkg/installed/x64-mingw-dynamic/include/GL/glew.h \
- C:/msys64/mingw64/include/inttypes.h \
  C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/renderer.hpp \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL.h \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_main.h \
@@ -353,12 +310,14 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_platform.h \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/begin_code.h \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/close_code.h \
+ C:/msys64/mingw64/include/stdio.h \
+ C:/msys64/mingw64/include/sec_api/stdio_s.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/msys64/mingw64/include/stdarg.h \
  C:/msys64/mingw64/include/_mingw_stdarg.h \
  C:/msys64/mingw64/include/string.h \
  C:/msys64/mingw64/include/sec_api/string_s.h \
- C:/msys64/mingw64/include/strings.h \
+ C:/msys64/mingw64/include/strings.h C:/msys64/mingw64/include/ctype.h \
  C:/msys64/mingw64/include/c++/15.2.0/math.h \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_assert.h \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_atomic.h \
@@ -525,13 +484,37 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: \
  C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_misc.h \
  C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/HybridSandCore/common.hpp \
  C:/msys64/mingw64/include/c++/15.2.0/chrono \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/chrono.h \
+ C:/msys64/mingw64/include/c++/15.2.0/ratio \
+ C:/msys64/mingw64/include/c++/15.2.0/ctime \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/parse_numbers.h \
  C:/msys64/mingw64/include/c++/15.2.0/iostream \
  C:/msys64/mingw64/include/c++/15.2.0/ostream \
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h \
  C:/msys64/mingw64/include/c++/15.2.0/ios \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h \
+ C:/msys64/mingw64/include/c++/15.2.0/clocale \
+ C:/msys64/mingw64/include/locale.h \
+ C:/msys64/mingw64/include/c++/15.2.0/cctype \
  C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h \
+ C:/msys64/mingw64/include/c++/15.2.0/string \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h \
+ C:/msys64/mingw64/include/c++/15.2.0/string_view \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
+ C:/msys64/mingw64/include/c++/15.2.0/cstdio \
+ C:/msys64/mingw64/include/c++/15.2.0/cerrno \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/charconv.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc \
  C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/system_error \
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
+ C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
  C:/msys64/mingw64/include/c++/15.2.0/streambuf \
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc \
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \

@@ -25,6 +25,7 @@ private:
     float delta_time_;
     float brush_radius_;
     std::chrono::high_resolution_clock::time_point last_frame_time_;
+    std::chrono::high_resolution_clock::time_point last_brush_action_time_;
 
     // Input handling
     void handle_input();

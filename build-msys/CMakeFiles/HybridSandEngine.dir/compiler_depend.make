@@ -8,7 +8,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/gpu_compute.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/particle_system.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/renderer.hpp \
-  C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/thread_pool.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/world.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/include/engine.hpp \
   C:/dev/vcpkg/installed/x64-mingw-dynamic/include/GL/glew.h \
@@ -206,7 +205,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/assert.h \
   C:/msys64/mingw64/include/c++/15.2.0/algorithm \
   C:/msys64/mingw64/include/c++/15.2.0/array \
-  C:/msys64/mingw64/include/c++/15.2.0/atomic \
   C:/msys64/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/15.2.0/bit \
@@ -216,7 +214,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_futex.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
@@ -229,7 +226,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/deque.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
@@ -261,8 +257,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/ptr_traits.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/random.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/random.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h \
@@ -272,21 +266,16 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/std_mutex.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/std_thread.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_deque.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_numeric.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_queue.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
@@ -295,9 +284,7 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/unique_lock.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/unordered_map.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
@@ -315,7 +302,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/cmath \
   C:/msys64/mingw64/include/c++/15.2.0/compare \
   C:/msys64/mingw64/include/c++/15.2.0/concepts \
-  C:/msys64/mingw64/include/c++/15.2.0/condition_variable \
   C:/msys64/mingw64/include/c++/15.2.0/cstddef \
   C:/msys64/mingw64/include/c++/15.2.0/cstdint \
   C:/msys64/mingw64/include/c++/15.2.0/cstdio \
@@ -325,7 +311,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/cwctype \
   C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
-  C:/msys64/mingw64/include/c++/15.2.0/deque \
   C:/msys64/mingw64/include/c++/15.2.0/exception \
   C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
   C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
@@ -335,7 +320,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/functional \
-  C:/msys64/mingw64/include/c++/15.2.0/future \
   C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
   C:/msys64/mingw64/include/c++/15.2.0/ios \
   C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
@@ -344,17 +328,12 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/limits \
   C:/msys64/mingw64/include/c++/15.2.0/math.h \
   C:/msys64/mingw64/include/c++/15.2.0/memory \
-  C:/msys64/mingw64/include/c++/15.2.0/mutex \
   C:/msys64/mingw64/include/c++/15.2.0/new \
-  C:/msys64/mingw64/include/c++/15.2.0/numeric \
   C:/msys64/mingw64/include/c++/15.2.0/ostream \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
-  C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_numeric_defs.h \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
-  C:/msys64/mingw64/include/c++/15.2.0/queue \
-  C:/msys64/mingw64/include/c++/15.2.0/random \
   C:/msys64/mingw64/include/c++/15.2.0/ratio \
   C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
@@ -362,7 +341,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/string \
   C:/msys64/mingw64/include/c++/15.2.0/string_view \
   C:/msys64/mingw64/include/c++/15.2.0/system_error \
-  C:/msys64/mingw64/include/c++/15.2.0/thread \
   C:/msys64/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
@@ -390,7 +368,6 @@ CMakeFiles/HybridSandEngine.dir/src/engine.cpp.obj: C:/Users/alexr/OneDrive/Docu
   C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h \
   C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
   C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h \
-  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/opt_random.h \
   C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h \
   C:/msys64/mingw64/include/corecrt.h \
   C:/msys64/mingw64/include/corecrt_startup.h \
@@ -571,7 +548,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/gpu_compute.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/particle_system.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/renderer.hpp \
-  C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/thread_pool.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/world.hpp \
   C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/include/engine.hpp \
   C:/dev/vcpkg/installed/x64-mingw-dynamic/include/GL/glew.h \
@@ -768,7 +744,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/_timeval.h \
   C:/msys64/mingw64/include/assert.h \
   C:/msys64/mingw64/include/c++/15.2.0/array \
-  C:/msys64/mingw64/include/c++/15.2.0/atomic \
   C:/msys64/mingw64/include/c++/15.2.0/backward/auto_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/15.2.0/bit \
@@ -777,7 +752,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/bits/allocated_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_futex.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc \
@@ -790,7 +764,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/deque.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/enable_special_members.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h \
@@ -831,19 +804,14 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/bits/specfun.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/std_mutex.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/std_thread.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_deque.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_queue.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_raw_storage_iter.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h \
@@ -852,8 +820,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/string_view.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h \
-  C:/msys64/mingw64/include/c++/15.2.0/bits/unique_lock.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/unique_ptr.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/unordered_map.h \
   C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h \
@@ -871,7 +837,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/cmath \
   C:/msys64/mingw64/include/c++/15.2.0/compare \
   C:/msys64/mingw64/include/c++/15.2.0/concepts \
-  C:/msys64/mingw64/include/c++/15.2.0/condition_variable \
   C:/msys64/mingw64/include/c++/15.2.0/cstddef \
   C:/msys64/mingw64/include/c++/15.2.0/cstdint \
   C:/msys64/mingw64/include/c++/15.2.0/cstdio \
@@ -881,7 +846,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/cwctype \
   C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h \
-  C:/msys64/mingw64/include/c++/15.2.0/deque \
   C:/msys64/mingw64/include/c++/15.2.0/exception \
   C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
   C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h \
@@ -891,7 +855,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h \
   C:/msys64/mingw64/include/c++/15.2.0/functional \
-  C:/msys64/mingw64/include/c++/15.2.0/future \
   C:/msys64/mingw64/include/c++/15.2.0/initializer_list \
   C:/msys64/mingw64/include/c++/15.2.0/ios \
   C:/msys64/mingw64/include/c++/15.2.0/iosfwd \
@@ -900,13 +863,11 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/limits \
   C:/msys64/mingw64/include/c++/15.2.0/math.h \
   C:/msys64/mingw64/include/c++/15.2.0/memory \
-  C:/msys64/mingw64/include/c++/15.2.0/mutex \
   C:/msys64/mingw64/include/c++/15.2.0/new \
   C:/msys64/mingw64/include/c++/15.2.0/ostream \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_memory_defs.h \
   C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h \
-  C:/msys64/mingw64/include/c++/15.2.0/queue \
   C:/msys64/mingw64/include/c++/15.2.0/ratio \
   C:/msys64/mingw64/include/c++/15.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/15.2.0/stdlib.h \
@@ -914,7 +875,6 @@ CMakeFiles/HybridSandEngine.dir/src/main.cpp.obj: C:/Users/alexr/OneDrive/Docume
   C:/msys64/mingw64/include/c++/15.2.0/string \
   C:/msys64/mingw64/include/c++/15.2.0/string_view \
   C:/msys64/mingw64/include/c++/15.2.0/system_error \
-  C:/msys64/mingw64/include/c++/15.2.0/thread \
   C:/msys64/mingw64/include/c++/15.2.0/tr1/bessel_function.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/tr1/beta_function.tcc \
   C:/msys64/mingw64/include/c++/15.2.0/tr1/ell_integral.tcc \
@@ -1140,14 +1100,6 @@ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_audio.h:
 
 C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/HybridSandCore/world.hpp:
 
-C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_system.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr.h:
-
-C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_keyboard.h:
-
-C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/thread_pool.hpp:
-
 C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include/common.hpp:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_double4_precision.hpp:
@@ -1192,6 +1144,8 @@ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_filesystem.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/_fixes.hpp:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/keylockerintrin.h:
+
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/GL/glew.h:
 
 C:/msys64/mingw64/include/corecrt_wstdlib.h:
@@ -1199,8 +1153,6 @@ C:/msys64/mingw64/include/corecrt_wstdlib.h:
 C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_video.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/atomic:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL.h:
 
@@ -1242,11 +1194,11 @@ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_gamecontroller.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_rect.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h:
+C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_gesture.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm3dnow.h:
 
-C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_gesture.h:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cpuid.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_haptic.h:
 
@@ -1272,6 +1224,12 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxtileintrin.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_joystick.h:
 
+C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_system.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/shared_ptr.h:
+
+C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_keyboard.h:
+
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_render.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sm4intrin.h:
@@ -1290,13 +1248,13 @@ C:/msys64/mingw64/include/pthread_signal.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/close_code.h:
 
-C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_locale.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fma4intrin.h:
+C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_int4_sized.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pmmintrin.h:
 
-C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_int4_sized.hpp:
+C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_locale.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/fma4intrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h:
 
@@ -1311,8 +1269,6 @@ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/type_mat3x3.hpp:
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_pixels.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_metal.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/queue:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2/SDL_mutex.h:
 
@@ -1350,13 +1306,11 @@ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/compute_common.hpp:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_bool3.hpp:
 
-C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/compute_vector_decl.hpp:
-
-C:/msys64/mingw64/include/c++/15.2.0/mutex:
-
 C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h:
+
+C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/compute_vector_decl.hpp:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/compute_vector_relational.hpp:
 
@@ -1436,13 +1390,11 @@ C:/msys64/mingw64/include/psdk_inc/intrin-impl.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/type_mat3x4.inl:
 
-C:/msys64/mingw64/include/c++/15.2.0/bits/hashtable_policy.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/unique_lock.h:
-
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/detail/type_mat4x2.hpp:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/bits/hashtable_policy.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/vec4.hpp:
 
@@ -1588,8 +1540,6 @@ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_float4_precision
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_float4x3.hpp:
 
-C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/opt_random.h:
-
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/matrix_float4x3_precision.hpp:
@@ -1613,6 +1563,8 @@ C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_bool2.hpp:
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_bool2_precision.hpp:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lzcntintrin.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_bool4.hpp:
 
@@ -1660,11 +1612,11 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2bf16intrin.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_int4.hpp:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/popcntintrin.h:
-
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_uint3_sized.hpp:
 
 C:/msys64/mingw64/include/c++/15.2.0/typeinfo:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/popcntintrin.h:
 
 C:/dev/vcpkg/installed/x64-mingw-dynamic/include/glm/ext/vector_uint4.hpp:
 
@@ -1770,12 +1722,6 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h:
 
-C:/msys64/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_futex.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/cwctype:
-
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h:
@@ -1801,14 +1747,6 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h:
 C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/deque.tcc:
-
-C:/msys64/mingw64/include/sec_api/string_s.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/ext/concurrence.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/enable_special_members.h:
 
@@ -1844,15 +1782,9 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movdirintrin.h:
+
 C:/msys64/mingw64/include/c++/15.2.0/bits/parse_numbers.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/random.h:
-
-C:/msys64/mingw64/include/vadefs.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tsxldtrkintrin.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/random.tcc:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h:
 
@@ -1868,27 +1800,15 @@ C:/msys64/mingw64/include/c++/15.2.0/cerrno:
 
 C:/msys64/mingw64/include/swprintf.inl:
 
-C:/msys64/mingw64/include/c++/15.2.0/bits/std_thread.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/std_mutex.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqvlintrin.h:
-
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tbmintrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h:
 
-C:/msys64/mingw64/include/c++/15.2.0/bits/stl_deque.h:
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h:
-
-C:/msys64/mingw64/include/sys/timeb.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/stl_numeric.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/stl_queue.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h:
 
@@ -1897,10 +1817,6 @@ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h:
 C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/bits/this_thread_sleep.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmaintrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h:
 
@@ -1944,8 +1860,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/amxbf16intrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/concepts:
 
-C:/msys64/mingw64/include/c++/15.2.0/condition_variable:
-
 C:/msys64/mingw64/include/c++/15.2.0/cstddef:
 
 C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h:
@@ -1966,17 +1880,23 @@ C:/msys64/mingw64/include/c++/15.2.0/cwchar:
 
 C:/msys64/mingw64/include/sec_api/stdlib_s.h:
 
+C:/msys64/mingw64/include/c++/15.2.0/tr1/poly_hermite.tcc:
+
+C:/msys64/mingw64/include/c++/15.2.0/cwctype:
+
 C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/deque:
 
 C:/msys64/mingw64/include/c++/15.2.0/exception:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmivlintrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h:
+
+C:/msys64/mingw64/include/sec_api/string_s.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx10_2minmaxintrin.h:
+
+C:/msys64/mingw64/include/c++/15.2.0/ext/concurrence.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h:
 
@@ -1989,8 +1909,6 @@ C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h:
 C:/msys64/mingw64/include/c++/15.2.0/functional:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vbmi2intrin.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/future:
 
 C:/msys64/mingw64/include/c++/15.2.0/istream:
 
@@ -2006,33 +1924,27 @@ C:/msys64/mingw64/include/c++/15.2.0/math.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/memory:
 
-C:/msys64/mingw64/include/c++/15.2.0/numeric:
-
 C:/msys64/mingw64/include/c++/15.2.0/pstl/execution_defs.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_algorithm_defs.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/pstl/glue_numeric_defs.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/bmiintrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/pstl/pstl_config.h:
 
-C:/msys64/mingw64/include/c++/15.2.0/random:
+C:/msys64/mingw64/include/c++/15.2.0/ratio:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mm_malloc.h:
-
-C:/msys64/mingw64/include/c++/15.2.0/ratio:
 
 C:/msys64/mingw64/include/c++/15.2.0/streambuf:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx2intrin.h:
 
-C:/msys64/mingw64/include/c++/15.2.0/thread:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/cmpccxaddintrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/tr1/hypergeometric.tcc:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/raointintrin.h:
 
 C:/msys64/mingw64/include/c++/15.2.0/tr1/legendre_function.tcc:
 
@@ -2096,6 +2008,10 @@ C:/msys64/mingw64/include/strings.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/emmintrin.h:
 
+C:/msys64/mingw64/include/sys/timeb.h:
+
+C:/msys64/mingw64/include/vadefs.h:
+
 C:/msys64/mingw64/include/wchar.h:
 
 C:/msys64/mingw64/include/wctype.h:
@@ -2134,6 +2050,10 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512bwintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512cdintrin.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512fp16vlintrin.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmaintrin.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512ifmavlintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlintrin.h:
@@ -2141,6 +2061,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vlintrin.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vp2intersectvlintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqintrin.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avx512vpopcntdqvlintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/avxifmaintrin.h:
 
@@ -2162,19 +2084,13 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/hresetintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/ia32intrin.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/keylockerintrin.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/limits.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/vaesintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lwpintrin.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/lzcntintrin.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mmintrin.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movdirintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/movrsintrin.h:
 
@@ -2184,17 +2100,13 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/mwaitxintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pconfigintrin.h:
 
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sha512intrin.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/pkuintrin.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/sha512intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/prfchiintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/prfchwintrin.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/raointintrin.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rdseedintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/rtmintrin.h:
 
@@ -2211,6 +2123,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/smmintrin.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/syslimits.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/tsxldtrkintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/uintrintrin.h:
 

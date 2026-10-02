@@ -15,6 +15,7 @@ public:
 
     // Render particles
     void render_particles(const Particle* particles, uint32_t count);
+    void render_particles(GLuint particle_buffer, uint32_t count);
 
     // Render grid (debug)
     void render_grid(const GridCell* grid, uint32_t width, uint32_t height);

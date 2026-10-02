@@ -1,7 +1,6 @@
 #pragma once
 
 #include "common.hpp"
-#include "thread_pool.hpp"
 #include "gpu_compute.hpp"
 #include <vector>
 #include <memory>
@@ -24,31 +23,23 @@ public:
     void update(float dt);
 
     // Get particle data
-    const std::vector<Particle>& get_particles() const { return particles_; }
+    const std::vector<Particle>& get_particles() const;
     uint32_t get_particle_count() const { return particle_count_; }
+    GLuint get_particle_buffer() const { return gpu_compute_->get_particle_buffer(); }
 
     // Performance stats
     const PerfStats& get_stats() const { return stats_; }
 
 private:
-    std::vector<Particle> particles_;
-    std::vector<Particle> particles_staging_;
-    std::vector<GridCell> grid_;
+    mutable std::vector<Particle> particles_;
     uint32_t particle_count_;
     uint32_t grid_width_;
     uint32_t grid_height_;
+    bool gpu_state_valid_;
 
-    std::unique_ptr<ThreadPool> thread_pool_;
     std::unique_ptr<GPUCompute> gpu_compute_;
 
     PerfStats stats_;
 
-    // CPU-side physics for low particle counts
-    void cpu_update_particles(float dt, uint32_t start, uint32_t end);
-    void cpu_grid_update();
-    void cpu_apply_gravity(float dt);
-
-    // Material interactions
-    void handle_collisions(uint32_t particle_idx);
-    void handle_material_reactions(uint32_t particle_idx);
+    void sync_particles_from_gpu() const;
 };

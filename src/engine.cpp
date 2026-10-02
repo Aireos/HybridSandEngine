@@ -2,7 +2,6 @@
 #include <SDL2/SDL.h>
 #include <algorithm>
 #include <iostream>
-#include <random>
 
 Engine::Engine() : running_(false), delta_time_(0.0f), brush_radius_(8.0f) {}
 
@@ -25,19 +24,18 @@ void Engine::init() {
 }
 
 int Engine::run() {
-    // Test: Spawn sand
-    std::mt19937 rng(42);
-    std::uniform_real_distribution<float> dist_x(100, GRID_WIDTH - 100);
-    std::uniform_real_distribution<float> dist_y(50, 200);
-    
-    // Spawn 1M sand particles in initial burst
-    for (uint32_t i = 0; i < 1000000; ++i) {
-        glm::vec2 pos(dist_x(rng), dist_y(rng));
-        glm::vec2 vel(0, 0);
+    constexpr uint32_t initial_particle_count = 180000;
+    constexpr uint32_t initial_row_width = 600;
+    for (uint32_t i = 0; i < initial_particle_count; ++i) {
+        glm::vec2 pos(
+            212.0f + static_cast<float>(i % initial_row_width),
+            700.0f + static_cast<float>(i / initial_row_width)
+        );
+        glm::vec2 vel(0.0f);
         world_->spawn_particle(pos, Material::SAND, vel);
     }
     
-    std::cout << "Spawned 1M particles. Starting simulation..." << std::endl;
+    std::cout << "Spawned " << initial_particle_count << " sand particles. Starting simulation..." << std::endl;
     
     uint32_t frame_count = 0;
     while (running_) {
@@ -86,10 +84,15 @@ void Engine::handle_input() {
         static_cast<float>(GRID_HEIGHT - 1 - mouse_y)
     );
 
+    const auto now = std::chrono::high_resolution_clock::now();
+    if (now - last_brush_action_time_ < std::chrono::milliseconds(16)) return;
+
     if ((mouse_buttons & SDL_BUTTON(SDL_BUTTON_LEFT)) != 0) {
         world_->paint_circle(brush_position, brush_radius_, Material::SAND);
+        last_brush_action_time_ = now;
     } else if ((mouse_buttons & SDL_BUTTON(SDL_BUTTON_RIGHT)) != 0) {
         world_->destroy_circle(brush_position, brush_radius_);
+        last_brush_action_time_ = now;
     }
 }
 
