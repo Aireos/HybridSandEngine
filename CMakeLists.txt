@@ -5,20 +5,7 @@ project(HybridSandEngine LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Find dependencies
-find_package(SDL2 REQUIRED)
-find_package(OpenGL REQUIRED)
-find_package(GLEW REQUIRED)
-find_package(glm CONFIG REQUIRED)
-find_package(Threads REQUIRED)
-
-# Find HybridSandCore library
-find_package(HybridSandCore REQUIRED)
-
-# Include directories
-include_directories(${SDL2_INCLUDE_DIRS})
-include_directories(${OPENGL_INCLUDE_DIRS})
-include_directories(${CMAKE_SOURCE_DIR}/include)
+find_package(HybridSandCore CONFIG REQUIRED)
 
 # Sandbox executable - depends on HybridSandCore
 add_executable(HybridSandEngine 
@@ -27,14 +14,8 @@ add_executable(HybridSandEngine
     include/engine.hpp
 )
 
-target_link_libraries(HybridSandEngine PRIVATE 
-    HybridSandCore
-    ${SDL2_LIBRARIES}
-    ${OPENGL_LIBRARIES}
-    GLEW::GLEW
-    glm::glm
-    Threads::Threads
-)
+target_include_directories(HybridSandEngine PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_link_libraries(HybridSandEngine PRIVATE HybridSandCore::HybridSandCore)
 
 # Compiler optimizations
 if(MSVC)

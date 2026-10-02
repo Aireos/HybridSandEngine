@@ -17,23 +17,27 @@ All simulation, physics, rendering, and GPU compute logic is in **HybridSandCore
 
 ### Building
 
-```bash
-# Install HybridSandCore first
-git clone https://github.com/Aireos/HybridSandCore.git
-cd HybridSandCore
-cmake -S . -B build && cmake --build build && cmake --install build
+Requires CMake, a C++17 compiler, and the SDL2, GLEW, and GLM development packages. OpenGL and thread support are provided by the platform/toolchain.
 
-# Then build the sandbox
+```bash
+# Keep the two repositories as siblings and install Core into Engine's local prefix.
+git clone https://github.com/Aireos/HybridSandCore.git
 git clone https://github.com/Aireos/HybridSandEngine.git
 cd HybridSandEngine
-cmake -S . -B build
-cmake --build build
+cd ../HybridSandCore
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=../HybridSandEngine/core-install
+cmake --build build --config Release
+cmake --install build --config Release
+
+cd ../HybridSandEngine
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=core-install
+cmake --build build --config Release
 ```
 
 ### Running
 
 ```bash
-./build/HybridSandEngine
+.\build-msys\HybridSandEngine.exe
 ```
 
 ### Controls

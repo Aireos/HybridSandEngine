@@ -1,0 +1,3 @@
+C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/build-msys/CMakeFiles/HybridSandEngine.dir
+C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/build-msys/CMakeFiles/edit_cache.dir
+C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/build-msys/CMakeFiles/rebuild_cache.dir

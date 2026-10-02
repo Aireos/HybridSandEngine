@@ -1,0 +1,1 @@
+-IC:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/include -isystem "C:/Users/alexr/OneDrive/Documents/sand_game/HybridSandEngine/core-install/include" -isystem "C:/dev/vcpkg/installed/x64-mingw-dynamic/include" -isystem "C:/dev/vcpkg/installed/x64-mingw-dynamic/include/SDL2"
