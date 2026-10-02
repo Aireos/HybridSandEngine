@@ -8,7 +8,7 @@ const uint32_t GRID_WIDTH = 1024;
 const uint32_t GRID_HEIGHT = 1024;
 const uint32_t MAX_PARTICLES = 10000000; // 10M particles
 const uint32_t PARTICLE_CHUNK_SIZE = 65536; // 64K per chunk
-const float GRAVITY = 9.81f;
+const float GRAVITY = -9.81f;
 const float TIME_STEP = 0.016f; // ~60 FPS
 const uint32_t THREAD_POOL_SIZE = 8;
 
